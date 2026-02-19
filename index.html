@@ -21,12 +21,10 @@
         </div>
     </nav>
 
-    <section class="py-16 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-extrabold mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">Subsurface Intelligence</h2>
-        <p class="text-slate-400 leading-relaxed text-lg">
-            Our Quantum Archaeology Suite bridges the gap between raw field sensors and visual intelligence. 
-            By utilizing advanced OSL (Optically Stimulated Luminescence) logic and geospatial anchoring, 
-            researchers can now visualize archaeological density across three specialized analytical scales.
+    <section class="py-12 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold mb-4 text-slate-100">Project Overview</h2>
+        <p class="text-slate-400 leading-relaxed">
+            The Quantum Archaeology Suite is a professional-grade analytical tool designed for non-invasive subsurface exploration. By combining <b>Optically Stimulated Luminescence (OSL)</b> simulation logic with GPS-anchored grid mapping, this system allows archaeologists to visualize site density and structural anomalies before a single trench is dug.
         </p>
     </section>
 
@@ -37,7 +35,7 @@
             <button onclick="switchModel('mapper')" id="btn-mapper" class="tab-btn px-4 py-4 font-bold text-[10px] md:text-xs uppercase tracking-widest text-slate-500">Global Mapper</button>
         </div>
 
-        <div class="bg-slate-900/40 rounded-b-3xl border-x border-b border-slate-800 min-h-[900px] p-2 mb-12">
+        <div class="bg-slate-900/40 rounded-b-3xl border-x border-b border-slate-800 min-h-[900px] p-2">
             <div id="model-custom" class="model-frame block">
                 <gradio-app src="https://samia08-quantum-coustamized-heatmaps.hf.space" theme_mode="dark"></gradio-app>
             </div>
@@ -51,7 +49,7 @@
     </section>
 
     <section class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-900">
-        <h3 class="text-2xl font-bold mb-8 text-center text-slate-200">System Support & Data Formats</h3>
+        <h3 class="text-2xl font-bold mb-8 text-center text-slate-200 text-amber-500">Model Support Center</h3>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                 <h4 class="text-amber-500 font-bold mb-3 uppercase text-xs tracking-widest">Custom Heatmaps</h4>
@@ -60,18 +58,19 @@
             </div>
             <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                 <h4 class="text-amber-500 font-bold mb-3 uppercase text-xs tracking-widest">Mini-Scale Suite</h4>
-                <p class="text-slate-400 text-sm">Direct input system. Optimized for localized site grids (100m x 100m). Adjust density and depth sliders to visualize layers.</p>
+                <p class="text-slate-400 text-sm">No file upload needed. Adjust density and depth sliders to visualize layers in a 100m x 100m localized grid.</p>
             </div>
             <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                 <h4 class="text-amber-500 font-bold mb-3 uppercase text-xs tracking-widest">Global Mapper</h4>
-                <p class="text-slate-400 text-sm">Large-scale mapping. Enter GPS coordinates or city names to anchor subsurface data to real-world topography.</p>
+                <p class="text-slate-400 text-sm">Enter a City or Country name or GPS coordinates in Decimal format to anchor your quantum scan results.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-16 text-center border-t border-slate-900 mt-10">
+    <footer class="py-16 text-center border-t border-slate-900">
+        <p class="text-slate-400 text-sm italic mb-4">"Transforming subsurface data into archaeological foresight."</p>
         <p class="text-slate-600 text-[10px] tracking-widest uppercase mb-2">System Online &bull; Encrypted Access</p>
-        <p class="text-slate-500 text-xs font-medium">Developed for Advanced Subsurface Visualization &copy; 2026</p>
+        <p class="text-slate-500 text-xs">Developed for Advanced Subsurface Visualization &copy; 2026</p>
     </footer>
 
     <script>
@@ -92,5 +91,6 @@
             document.getElementById('btn-' + modelId).classList.remove('text-slate-500');
         }
     </script>
+
 </body>
 </html>
